@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Workout | The Daily Set</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    background: #f5f1e8;
+    color: #1a1a1a;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.block img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 10px;
+}
+
+
+/* HEADER */
+.header h2 {
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+}
+
+.header p {
+    margin-top: 8px;
+    opacity: 0.7;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+
+/* DIVIDER */
+.divider {
+    width: 70px;
+    height: 2px;
+    background: #1a1a1a;
+    margin: 35px 0;
+}
+
+/* GRID */
+.plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* CARD BASE */
+.card {
+    padding: 25px;
+    border-radius: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* COLOR VARIANTS */
+.push { background: #ede6d8; }
+.pull { background: #cfd8c6; }
+.legs { background: #e6dac4; }
+
+.full { background: #cfd8c6; }
+.cardio { background: #ede6d8; }
+.recovery { background: #e6dac4; }
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    line-height: 1.4;
+}
+
+/* FOOT NOTE */
+.note {
+    margin-top: 45px;
+    padding-left: 20px;
+    border-left: 4px solid #1a1a1a;
+    opacity: 0.85;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+    
+    <div class="block">
+        <img src="/CSS GRID/media/workout.jpg">
+        <h4>Leg Day</h4>
+        <p>No skipping. Ever.</p>
+    </div>
+
+
+    <div class="header">
+        <h2>Workout Mode: ON</h2>
+        <p>build strength. protect consistency.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="plans">
+
+        <div class="card push">
+            <h3>🔥 Push Day</h3>
+            <p>Chest, shoulders, triceps. Controlled reps.</p>
+        </div>
+
+        <div class="card pull">
+            <h3>💪 Pull Day</h3>
+            <p>Back and biceps. Mind–muscle focus.</p>
+        </div>
+
+        <div class="card legs">
+            <h3>🦵 Leg Day</h3>
+            <p>Quads, hamstrings, glutes. No skipping.</p>
+        </div>
+
+        <div class="card full">
+            <h3>⚡ Full Body</h3>
+            <p>Compound lifts. Perfect for busy days.</p>
+        </div>
+
+        <div class="card cardio">
+            <h3>❤️ Cardio + Core</h3>
+            <p>Endurance, abs, mobility.</p>
+        </div>
+
+        <div class="card recovery">
+            <h3>🧘 Active Recovery</h3>
+            <p>Stretch. Walk. Heal.</p>
+        </div>
+
+    </div>
+
+    <div class="note">
+        <p>Consistency beats intensity — every time.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

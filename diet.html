@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Diet | The Daily Set</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    background: #f5f1e8;
+    color: #1a1a1a;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* HEADER */
+.header h2 {
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+}
+
+.header p {
+    margin-top: 8px;
+    opacity: 0.7;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+
+/* DIVIDER */
+.divider {
+    width: 70px;
+    height: 2px;
+    background: #1a1a1a;
+    margin: 35px 0;
+}
+
+/* SECTIONS GRID */
+.meals {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    padding: 25px;
+    border-radius: 18px;
+}
+
+.breakfast { background: #ede6d8; }
+.lunch     { background: #cfd8c6; }
+.dinner    { background: #e6dac4; }
+.snacks    { background: #ede6d8; }
+.smoothie  { background: #cfd8c6; }
+.detox     { background: #e6dac4; }
+
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card ul {
+    padding-left: 18px;
+}
+
+.card li {
+    margin: 6px 0;
+    opacity: 0.85;
+}
+
+/* FOOT NOTE */
+.note {
+    margin-top: 45px;
+    padding-left: 20px;
+    border-left: 4px solid #1a1a1a;
+    opacity: 0.85;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h2>Diet = Fuel</h2>
+        <p>eat smart. feel strong.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- MEALS -->
+    <div class="meals">
+
+        <div class="card breakfast">
+            <h3>🌅 Breakfast</h3>
+            <ul>
+                <li>🥣 Oats + nuts + fruits</li>
+                <li>🍳 Eggs & whole-grain toast</li>
+                <li>🍌 Banana + peanut butter</li>
+            </ul>
+        </div>
+
+        <div class="card lunch">
+            <h3>☀️ Lunch</h3>
+            <ul>
+                <li>🍚 Rice + dal + veggies</li>
+                <li>🥗 Grilled chicken salad</li>
+                <li>🫓 Roti + sabzi + curd</li>
+            </ul>
+        </div>
+
+        <div class="card dinner">
+            <h3>🌙 Dinner</h3>
+            <ul>
+                <li>🍗 Protein + veggies</li>
+                <li>🥦 Stir-fried vegetables</li>
+                <li>🍲 Light soup & toast</li>
+            </ul>
+        </div>
+
+        <div class="card snacks">
+            <h3>🍎 Healthy Snacks</h3>
+            <ul>
+                <li>🥜 Nuts & seeds</li>
+                <li>🍿 Air-popped popcorn</li>
+                <li>🍫 Dark chocolate (small)</li>
+            </ul>
+        </div>
+
+        <div class="card smoothie">
+            <h3>🥤 Smoothies</h3>
+            <ul>
+                <li>🍓 Berry + yogurt</li>
+                <li>🥭 Mango + oats</li>
+                <li>🥬 Spinach + apple</li>
+            </ul>
+        </div>
+
+        <div class="card detox">
+    <h3>🧃 Detox Juices</h3>
+    <ul>
+        <li>🍋 Lemon + ginger + warm water</li>
+        <li>🥒 Cucumber + mint</li>
+        <li>🍎 Apple + beetroot</li>
+    </ul>
+</div>
+
+
+    </div>
+
+    <!-- NOTE -->
+    <div class="note">
+        <p>
+            You don’t eat less to get strong.  
+            You eat right.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

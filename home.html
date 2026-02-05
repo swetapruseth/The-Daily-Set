@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home | The Daily Set</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    background: #f5f1e8;
+    color: #1a1a1a;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* HERO */
+.hero h2 {
+    font-size: 2.6rem;
+    letter-spacing: 4px;
+    animation: fadeUp 1s ease forwards;
+}
+
+.hero p {
+    margin-top: 12px;
+    font-size: 1.1rem;
+    opacity: 0.7;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    animation: fadeUp 1.4s ease forwards;
+}
+
+/* DIVIDER */
+.divider {
+    width: 60px;
+    height: 2px;
+    margin: 35px 0;
+    background: #1a1a1a;
+}
+
+/* FOCUS */
+.focus {
+    padding: 25px;
+    border-left: 4px solid #1a1a1a;
+    background: #ede6d8;
+    margin-bottom: 40px;
+    animation: fadeUp 1.8s ease forwards;
+}
+
+/* STREAK */
+.streak {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    background: #cfd8c6;
+    padding: 18px 22px;
+    border-radius: 14px;
+}
+
+.streak span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ROUTINE */
+.routine {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+/* BLOCK VARIANTS */
+.block {
+    padding: 20px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.block:nth-child(1) { background: #ede6d8; }
+.block:nth-child(2) { background: #cfd8c6; }
+.block:nth-child(3) { background: #e6dac4; }
+.block:nth-child(4) { background: #ede6d8; }
+
+.block:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.block p {
+    font-size: 0.9rem;
+    opacity: 0.75;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- HERO -->
+    <div class="hero">
+        <h2>THE DAILY SET</h2>
+        <p>show up. do the work. repeat.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- FOCUS -->
+    <div class="focus">
+        <h3>Today’s focus</h3>
+        <p>Just don’t skip. Even 1% counts.</p>
+    </div>
+
+    <!-- STREAK -->
+    <div class="streak">
+        <p>🔥 Daily streak</p>
+        <span>01</span>
+    </div>
+
+    <!-- ROUTINE -->
+    <div class="routine">
+        <div class="block">
+            <h4>🌅 Morning</h4>
+            <p>Hydrate. Stretch. Lock in.</p>
+        </div>
+
+        <div class="block">
+            <h4>☀️ Midday</h4>
+            <p>Eat clean. Stay sharp.</p>
+        </div>
+
+        <div class="block">
+            <h4>🌆 Evening</h4>
+            <p>Train hard. No distractions.</p>
+        </div>
+
+        <div class="block">
+            <h4>🌙 Night</h4>
+            <p>Recover. Sleep deep.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
